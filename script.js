@@ -27,7 +27,7 @@ addTask.addEventListener('click', function() {
     }
     inputTask.value = "";
     checkButton.addEventListener('click', function() {
-        checkButton.previousElementSibling.style.textDecoration = 'line-through';
+        checkButton.previousElementSibling.classList.toggle('line');
     })
     deleteButton.addEventListener('click', function() {
         deleteButton.parentElement.remove();
