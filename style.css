@@ -98,3 +98,7 @@ button {
     background-color: red;
     color: white;
 }
+
+.line {
+    text-decoration: line-through;
+}
