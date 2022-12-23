@@ -7,9 +7,14 @@
 body {
     height: 100vh;
     background: linear-gradient(rgb(95, 5, 5), rgb(186, 177, 177));
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    position: absolute;
+    left: 38%;
+    top: 30%;
 }
 
 #add-task-container {
@@ -101,4 +106,19 @@ button {
 
 .line {
     text-decoration: line-through;
+}
+
+#list-length {
+    display: flex;
+    justify-content: space-evenly;
+    width: 150px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+p {
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
 }
