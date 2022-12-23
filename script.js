@@ -33,9 +33,7 @@ addTask.addEventListener('click', function() {
     })
     deleteButton.addEventListener('click', function() {
         deleteButton.parentElement.remove();
-        if (counter > 0) {
-            counter -= 1;
-        }
+        counter -= 1;
         document.getElementById('length').textContent = counter;
     })
     document.getElementById('length').textContent = counter;
