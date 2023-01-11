@@ -8,7 +8,9 @@ let counter = 0;
 // Event listener for add button
 
 addTask.addEventListener('click', function() {
-    counter += 1;
+    if (inputTask.value !== "") {
+        counter += 1;
+    }
     let task = document.createElement('div');
     task.classList.add('task');
     let li = document.createElement('li');
